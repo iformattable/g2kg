@@ -124,7 +124,7 @@
               <div class="container">
                 <div class="carousel-caption">
                   <h1>Better Together</h1>
-                  <p class="lead">Learn from and with other developers in a collaborative and open atmosphere. Best of all,
+                  <p class="lead">Learn with other developers in a collaborative and open atmosphere. Best of all,
                     it's free!</p>
                   <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
                 </div>
@@ -187,5 +187,12 @@
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('.carousel').carousel({
+              interval: 10000
+            });
+          });
+        </script>
     </body>
 </html>
