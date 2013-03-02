@@ -13,8 +13,63 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
             body {
-                padding-top: 60px;
+                padding-top: 43px;
                 padding-bottom: 40px;
+            }
+            .git {
+                font-style: italic;
+                font-family: "Courier New"
+            }
+            /* CUSTOMIZE THE CAROUSEL
+            -------------------------------------------------- */
+
+            /* Carousel base class */
+            .carousel {
+              margin-bottom: 60px;
+            }
+
+            .carousel .container {
+              position: relative;
+              z-index: 9;
+            }
+
+            .carousel-control {
+              height: 80px;
+              margin-top: 0;
+              font-size: 120px;
+              text-shadow: 0 1px 1px rgba(0,0,0,.4);
+              background-color: transparent;
+              border: 0;
+              z-index: 10;
+            }
+
+            .carousel .item {
+              height: 500px;
+            }
+            .carousel img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              min-width: 100%;
+              height: 500px;
+            }
+
+            .carousel-caption {
+              background-color: transparent;
+              position: static;
+              max-width: 550px;
+              padding: 0 20px;
+              margin-top: 200px;
+            }
+            .carousel-caption h1,
+            .carousel-caption .lead {
+              margin: 0;
+              line-height: 1.25;
+              color: #fff;
+              text-shadow: 0 1px 1px rgba(0,0,0,.4);
+            }
+            .carousel-caption .btn {
+              margin-top: 10px;
             }
         </style>
         <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
@@ -37,49 +92,77 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="#">Project name</a>
+                    <a class="brand" href="#">Get to Know <span class="git">git</span></a>
                     <div class="nav-collapse collapse">
                         <ul class="nav">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li class="divider"></li>
-                                    <li class="nav-header">Nav header</li>
-                                    <li><a href="#">Separated link</a></li>
-                                    <li><a href="#">One more separated link</a></li>
-                                </ul>
-                            </li>
+                            <li class="active"><a href="#">Top</a></li>
+                            <li><a href="#learn">Learn</a></li>
+                            <li><a href="#speakers">Speakers</a></li>
+                            <li><a href="#venue">Venue</a></li>
+                            <li><a href="#signup">Sign Up</a></li>
                         </ul>
-                        <form class="navbar-form pull-right">
-                            <input class="span2" type="text" placeholder="Email">
-                            <input class="span2" type="password" placeholder="Password">
-                            <button type="submit" class="btn">Sign in</button>
-                        </form>
                     </div><!--/.nav-collapse -->
                 </div>
             </div>
-        </div>
-
-        <div class="container">
-
-            <!-- Main hero unit for a primary marketing message or call to action -->
-            <div class="hero-unit">
-                <h1>Hello, world!</h1>
-                <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-                <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+        </div>   
+        <div id="myCarousel" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="item">
+              <img src="img/speakeasy_hero_bg.png" alt="">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Example headline.</h1>
+                  <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+                </div>
+              </div>
             </div>
+            <div class="item">
+              <img src="img/speakeasy_hero_bg.png" alt="">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Another example headline.</h1>
+                  <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <a class="btn btn-large btn-primary" href="#">Learn more</a>
+                </div>
+              </div>
+            </div>
+            <div class="item active">
+              <img src="img/speakeasy_hero_bg.png" alt="">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>One more for good measure.</h1>
+                  <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+        </div>
+         <div class="container">
+            <!-- Main hero unit for a primary marketing message or call to action 
+            <div class="hero-unit">
+                <h1><span class="git">git</span> makes life better</h1>
+                <p>Join us to develop a new level of proficiency. We'll start with the internals that are
+                    fundamental to understanding every command and finish with advice on how to improve your workflow.</p>
+                <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+            </div>-->
 
             <!-- Example row of columns -->
             <div class="row">
                 <div class="span4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <a name="learn"></a>
+                    <h2>Topics</h2>
+                    <h3><span class="git">git</span>&rsquo;s Safety Scissors</h3>
+                    <blockquote>
+                        <p>The knack [to flying] lies in learning to throw yourself at the ground and miss.</p>
+                        <small>Ford Prefect, <cite title="The Hitchhiker's Guide to the Galaxy">The Hitchhiker's Guide to the Galaxy</cite></small>
+                    </blockquote>
+                    <p><span style="text-decoration:line-through">Ameliorate trepidation around verbose prose.</span> The sharpest tools make the
+                        job easiest, but also present a danger in themselves.  Learn about the tools <span class="git">git</span> provides to preclude
+                        and fix mistakes, so you'll have the confidence to use it the way it was meant to be used.</p>
                     <p><a class="btn" href="#">View details &raquo;</a></p>
                 </div>
                 <div class="span4">
@@ -97,7 +180,7 @@
             <hr>
 
             <footer>
-                <p>&copy; Company 2012</p>
+                <p>&copy; Christopher Atkins 2013</p>
             </footer>
 
         </div> <!-- /container -->
