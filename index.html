@@ -220,7 +220,10 @@
             </footer>
 
         </div> <!-- /container -->
-
+		<div class="modal hide alert fade" id="confirm">
+		  <button type="button" class="close" data-dismiss="alert">&times;</button>
+		  <strong>Awesome!</strong> Can't wait to see you at The Speak Easy!
+		</div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 
@@ -233,6 +236,16 @@
             $('.carousel').carousel({
               interval: 10000
             });
+			$().alert();
+			$('#confirm').bind('closed', function () {
+				  $('#confirm').modal('hide');
+			});
+			var query = window.location.search;
+			if(query && query.indexOf('confirm') > 0) 
+			{
+				$('.btn').hide();
+				$('#confirm').modal('show');
+			}
           });
         </script>
     </body>
